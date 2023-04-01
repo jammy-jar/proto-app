@@ -1,0 +1,43 @@
+body
+    nav.navbar.navbar-expand-lg.bg-light.border-bottom
+        .container-fluid
+            a.navbar-brand(href='/')
+                img.border-0.rounded(src='/images/logo.png', style='height: 32px', alt='Logo')
+            button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+            #navbarSupportedContent.collapse.navbar-collapse
+                ul.navbar-nav.me-auto.mb-2.mb-lg-0
+                    li.nav-item
+                        a.nav-link.active(aria-current='page', href='/') Home
+                    li.nav-item
+                        a.nav-link(href='/calendar') Calendar
+                    li.nav-item.dropdown
+                        a.nav-link.dropdown-toggle(href='#', role='button', data-bs-toggle='dropdown', aria-expanded='false') Create
+                        ul.dropdown-menu
+                            li
+                                a.dropdown-item(href='#')
+                                    i.bi.bi-plus-lg
+                                    |  Vessel
+                            li
+                                a.dropdown-item(href='#') Another action
+                            li.dropdown-divider
+                            li
+                                a.dropdown-item(href='#') Something else here
+
+                ul.navbar-nav.ms-auto.mb-2.mb-lg-0
+                    li.nav-item.me-3
+                        .input-group
+                            span#search-label.input-group-text
+                                i.bi.bi-search
+                            input.form-control(type='text', placeholder="Search", aria-label="Search", aria-describedby="search-label")
+                        ul.list-group.position-absolute.col-2
+
+                    li.nav-item.me-2
+                        a.nav-link(href='/favorites')
+                            i.bi.bi-heart-fill
+                            |  Favorites
+                    li.nav-item 
+                        a.nav-link(href='/login') Login 
+                    li.nav-item 
+                        a.nav-link(href='/signup') Sign Up
+                    

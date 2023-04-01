@@ -3,14 +3,11 @@ import express from 'express';
 import path from 'path';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
-import 'bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 import indexRouter from './routes/index.js';
 import usersRouter from './routes/users.js';
 
 const __dirname = path.dirname(new URL(import.meta.url).pathname).slice(1);
-console.log(__dirname)
 
 var app = express();
 
